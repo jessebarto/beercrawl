@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+  </head>
+  <body>
+    <!-- Contact Form - sent to a Google Sheet -->
+    <form>
+      <div><input  name="first name" id="first name" >
+      <div><input  name="email" id="email" >
+      <div><input  class="venue" name="venue" value="raffle" data-id="raffle">
+      </div>
+      <hr>
+      <div id="raffle_c" style="display:none"><p>You're checked in!<p></div>
+      <button id="raffle_b" type='submit'>Send</button>
+    </form>
+    <form>
+      <div><input  name="first name" id="first name" >
+      <div><input  name="email" id="email" >
+      <div><input  class="venue" name="venue" value="tap" data-id="tap">
+      </div>
+      <hr>
+      <div id="tap_c" style="display:none"><p>You're checked in!<p></div>
+      <button id="tap_b" type='submit'>Send</button>
+    </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='crawl.js'></script>
+</html>
