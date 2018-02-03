@@ -7,26 +7,34 @@
   </head>
   <body>
     <!-- Contact Form - sent to a Google Sheet -->
-    <form>
-      <div><input  name="first name" id="first name" >
-      <div><input  name="email" id="email" >
+    <form id"raffle">
+      <div><input  name="firstname">
+      <div><input  name="email">
       <div><input  class="venue" name="venue" value="raffle" data-id="raffle">
       </div>
       <hr>
       <div id="raffle_c" style="display:none"><p>You're checked in!<p></div>
       <button id="raffle_b" type='submit'>Send</button>
     </form>
-    <form>
-      <div><input  name="first name" id="first name" >
-      <div><input  name="email" id="email" >
-      <div><input  class="venue" name="venue" value="tap" data-id="tap">
+    <form id"tap25">
+      <div><input  name="firstname">
+      <div><input  name="email">
+      <div><input  class="venue" name="venue" value="tap25" data-id="tap25">
       </div>
       <hr>
-      <div id="tap_c" style="display:none"><p>You're checked in!<p></div>
-      <button id="tap_b" type='submit'>Send</button>
+      <div id="tap25c" class="checkedin"><p>You're checked in!<p></div>
+      <button id="tap25b" class="submit" type='submit'>Send</button>
     </form>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Custom Theme JavaScript -->
   <script src='crawl.js'></script>
+  <style>
+    .checkedin {
+       display: none;
+    }
+    .showcheck {
+      display: block;
+    }
+  </style>
 </html>
