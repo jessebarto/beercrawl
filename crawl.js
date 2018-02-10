@@ -1,25 +1,29 @@
 
+function registerUser(firstname, email) {
+    localStorage.setItem('firstname', firstname);
+    localStorage.setItem('email', email);
+    localStorage.setItem('registration', 'yes')
+
+}
+
 function populateForm(){
     //if users is registered this will populate all hidden venue forms
     var firstname = localStorage.getItem('firstname');
     var email = ('value', localStorage.getItem('email'));
     $('[name=email]').val(email);
     $('[name=firstname]').val(firstname);
+    return;
 
 }
 
 function checkin(location){
-    //create the local string from array to hold checkedin venues
-    if (!localStorage.venues){
-        var venues = [location];
-        localStorage.setItem('venues', JSON.stringify(venues));
-        
-    }
     //get the venues string and convert to array, then append new venue
     var getvenues = localStorage.getItem('venues');
     var venues = JSON.parse(getvenues);
     venues.push(location);
     localStorage.setItem('venues', JSON.stringify(venues));
+    return;
+
     
 }
 
@@ -31,6 +35,10 @@ $('form').submit(function(event){
     
     var dataArray = $(this).serializeArray();
     var venue = dataArray[2].value;
+
+    if (venue == "raffle")
+        registerUser(dataArray[0].value, dataArray[1].value);
+
     
     // send data to google sheet
     jQuery.ajax({
@@ -38,7 +46,7 @@ $('form').submit(function(event){
         type: "post",
         data: dataArray,
         success: function(data){
-            console.log("it worked!");
+            console.log("user checked in!");
             $('#' + venue + "c").addClass('showcheck');
             $('#' + venue + "b").addClass('checkedin');
             checkin(venue);
@@ -51,6 +59,20 @@ $('form').submit(function(event){
     // Prevent default posting of form
     event.preventDefault();
 });
+
+function loaded() {
+    console.log('contact form submission handler loaded successfully');
+    //create the local string from array to hold checkedin venues
+    if (!localStorage.venues){
+        var venues = [];
+        localStorage.setItem('venues', JSON.stringify(venues));
+        
+    }
+    return;
+
+};
+
+document.addEventListener('DOMContentLoaded', loaded, false);
 
 /*
 brewcrawl javascript created by jessebarto.com with help from Jean Luc the cats' dad Benjamin Steyaert
