@@ -1,0 +1,144 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Livermore Annual Brew Crawl</title>
+    <meta charset="utf-8">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style type="text/css">
+  .checkedin {
+     display: none;
+  }
+  .showcheck {
+    display: block;
+  }
+  .hidden  {
+   display: none;
+  }
+  hr.style2 {
+  border-top: 3px double #8c8b8b;
+  }
+  hr.style4 {
+  border-top: 1px dotted #8c8b8b;
+  }
+  hr.style6 {
+  background-color: #fff;
+  border-top: 2px dotted #8c8b8b;
+  }
+  input.rounded {
+  border: 1px solid #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 2px 2px 3px #666;
+  -webkit-box-shadow: 2px 2px 3px #666;
+  box-shadow: 2px 2px 3px #666;
+  font-size: 20px;
+  padding: 4px 7px;
+  outline: 0;
+  -webkit-appearance: none;
+  }
+  input.rounded:focus {
+  border-color: #339933;
+  }
+</style>
+
+  </head>
+  <body>
+	
+	
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+  <ul class="nav">
+    <li><a href="/" class="navbar-brand">Livermore Annual Brew Crawl</a></li>
+  </ul>
+</nav>
+<!-- Header Panel -->
+<div class="container-fluid text-center">
+<img src="crawl_logo_sm.png" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="container"><!-- start wrapper container -->
+<div class="card border-dark m-b-0 text-center"> <!-- start card border dark DIV THAT CENTERS ACCORDIAN -->
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Welcome to Brew Crawl
+            </a>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+            <div class="container">
+              <form id="raffle">
+                    <div><label>First Name:</label><input class="rounded" type="text" name="firstname" placeholder="First name"></div>
+                    <div><label>Email:</label><input class="rounded" type="text"  name="email" placeholder="jesse@gmail.com"></div>
+                    <div><input class="checkedin" name="venue" value="raffle"></div>
+                    <hr>
+                    <button id="raffleb" type='submit'>Enter Raffle!</button>
+                    <hr class="style4">
+                  </form>
+                  <div id="raffle_c" style="display:none"><p>You're entered in the Raffle!<p></div>
+                </div>
+              <hr class="style4">
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-block">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum <eiusmod>   </eiusmod>. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-block">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum <eiusmod>   </eiusmod>. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div><!-- end accordian -->
+</div><!-- end card border dark -->
+</div><!-- end WRAPPER container -->
+
+
+    <!-- JavaScript: placed at the end of the document so the pages load faster -->
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<!-- Popper -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    <!-- crawl javascript that runs the web-->
+    <script src='crawl.js'></script>
+  </body>
+</html>

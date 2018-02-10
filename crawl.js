@@ -61,7 +61,7 @@ $('form').submit(function(event){
 });
 
 function loaded() {
-    console.log('contact form submission handler loaded successfully');
+    console.log('page loaded success');
     //create the local string from array to hold checkedin venues
     if (!localStorage.venues){
         var venues = [];
