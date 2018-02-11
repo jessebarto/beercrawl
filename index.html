@@ -22,6 +22,10 @@
   .hidden  {
    display: none;
   }
+  .selected {
+    color: white;
+    background:#00C851;
+  }
   hr.style2 {
   border-top: 3px double #8c8b8b;
   }
@@ -72,7 +76,7 @@
           Experience Livermore's growing Craft Beer scene among the bustling nightlife of Downtown Livermore. Join us as downtown restaurants, tap rooms and other watering holes, showcase the beers of our cities 4 great Breweries. Altamont Beer Works, Eight Bridges Brewing, Shadow Puppet Brewing Company and Working Man Brewing Company will be taking over the taps in Downtown Livermore!
           <hr class="style4"> 
           <!-- start menu block -->
-            <button class="card-header border-dark alert-success collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <button id="raffles" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 <a class="card-title">
                   <h5>Enter the Raffle!</h5>
                 </a>
@@ -89,24 +93,24 @@
                 <div class="container">
                   <div id="raffleb">
                   <form id="raffle">
-                    <div><label>First Name:</label><input class="rounded" type="text" name="firstname" placeholder="First name"></div>
+                    <div><label>Name:</label><input class="rounded" type="text" name="firstname" placeholder="First name"></div>
                     <div><label>Email:</label><input class="rounded" type="text"  name="email" placeholder="jesse@gmail.com"></div>
                     <div><input class="checkedin" name="venue" value="raffle"></div>
                     <hr>
-                    <button id="raffle" type='submit'>Enter Raffle!</button>
-                    <hr class="style4">
+                    <button id="raffle" type='submit' class="btn btn-info btn-lg btn-block" >Enter Raffle!</button>
                   </form>
                   </div>
-                <div id="rafflec"><p>You're entered in the Raffle!<p></div>
+                <button id="rafflec" class="checkedin btn btn-success btn-lg btn-block"><span>You're entered in the Raffle!</span></button>
+                <hr class="style4">
                 </div>
             </div>
            <!-- start menu block -->
-            <button class="card-header border-dark alert-success collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+            <button id="tap25s" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                <a class="card-title">
                 <h5>Tap 25</h5>
                </a>
             </button><!-- end menu block -->
-            <div id="collapseSix" class="panel-collapse collapse">
+            <div id="collapseTwo" class="panel-collapse collapse">
               <div class="container"><!-- start bar block -->
                   <div class="row">
                     <div class="col-sm">
@@ -134,43 +138,597 @@
                         <div><input class="hidden" name="email"></div>
                         <div><input class="hidden" name="venue" value="tap25" data-id="tap25"></div>
                         <hr>
-                        <div id="tap25c" class="checkedin"><p>You're checked in!<p></div>
-                        <button id="tap25b" class="submit" type='submit'>Check In!</button>
+                        <button id="tap25b" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="tap25c" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
                       </form>
                     </div>
                   </div>
                </div>   
             </div><!-- end bar block -->
-                        <!-- start menu block -->
-            <button class="card-header border-dark alert-success collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <!-- start menu block -->
+            <button id="beerbarons" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                <a class="card-title">
                 <h5>Beer Baron</h5>
                </a>
             </button><!-- end menu block -->
-            <div id="collapseTwo" class="panel-collapse collapse">
+            <div id="collapseThree" class="panel-collapse collapse">
               <div class="container"><!-- start bar block -->
                   <div class="row">
                     <div class="col-sm">
-                      2223 1st St, Livermore, CA
+                      2223 1st St, Livermore
                     </div>
                     <div class="col-sm">
-                    <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Cocktails</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Outside Food OK</span>&nbsp;
+                      beerbaronbar.com/livermore/
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Outside Food OK</span>&nbsp;
                     </div>
                   </div>
                   <hr class="style4">
                   <div class="row">
                     <div class ="col-sm">
-                      <span> The Beer Baron Livermore provides a lively and inviting atmosphere in which to enjoy a variety of craft beers, 300-plus top quality whiskies from around the world, and refreshing cocktails.</span>
+                      <span>The Beer Baron Livermore provides a lively and inviting atmosphere in which to enjoy a variety of craft beers, 300-plus top quality whiskies from around the world, and refreshing cocktails.</span>
                       <hr class="style4">
                     </div>
                     <div class="container">
-                      <form id="tap25">
+                      <form id="beerbaron">
                         <div><input class="hidden" name="firstname"></div>
                         <div><input class="hidden" name="email"></div>
-                        <div><input class="hidden" name="venue" value="tap25" data-id="tap25"></div>
+                        <div><input class="hidden" name="venue" value="beerbaron" data-id="beerbaron"></div>
                         <hr>
-                        <div id="tap25c" class="checkedin"><p>You're checked in!<p></div>
-                        <button id="tap25b" class="submit" type='submit'>Check In!</button>
+                        <button id="beerbaronb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="beerbaronc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="firststreetalehouses" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+               <a class="card-title">
+                <h5>First Street Alehouse</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2106 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      firststreetalehouse.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>A huge collection of beer cans deck the walls at this convivial haunt for American grub & brews.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="firststreetalehouse">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="firststreetalehouse" data-id="firststreetalehouse"></div>
+                        <hr>
+                        <button id="firststreetalehouseb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="firststreetalehousec" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="banksvaults" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+               <a class="card-title">
+                <h5>The Banks Vault</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      56 S Livermore Ave, Livermore
+                    </div>
+                    <div class="col-sm">
+                      thebanksvaultlivermore.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;&nbsp;<span class="fa fa-cutlery">&nbsp;Tapas Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>The Banks Vault Livermore provides a great atmosphere so you can enjoy from our fine selection of wine, craft beer, and tapas.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="banksvault">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="banksvault" data-id="banksvault"></div>
+                        <hr>
+                        <button id="banksvaultb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="banksvaultc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="sauceds" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+               <a class="card-title">
+                <h5>Sauced BBQ & Spirits</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseSix" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2300 First St #120, Livermore
+                    </div>
+                    <div class="col-sm">
+                      saucedbbqandspirits.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>This chill eatery featuring rustic decor & a full bar offers BBQ classics & live music on weekends.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="sauced">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="sauced" data-id="sauced"></div>
+                        <hr>
+                        <button id="saucedb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="saucedc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="patxis" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+               <a class="card-title">
+                <h5>Patxi’s Livermore</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseSeven" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2470 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      patxispizza.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Pizzeria chain serving creative deep-dish & thin-crust pies in a stylish, contemporary setting.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="patxi">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="patxi" data-id="patxi"></div>
+                        <hr>
+                        <button id="patxib" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="patxic" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="beachhuts" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+               <a class="card-title">
+                <h5>Beach Hut Deli</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseEight" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      1770 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      beachhutdeli.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Deli-style sandwich chain serving unique combinations in a relaxed environment with a beach theme.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="beachhut">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="beachhut" data-id="beachhut"></div>
+                        <hr>
+                        <button id="beachhutb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="beachhutc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="sanctuarys" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+               <a class="card-title">
+                <h5>Sanctuary Ultra Lounge</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseNine" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2369 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      sanctuaryultralounge.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Laid-back lounge for cocktails, burgers & small plates, plus comedy, karaoke & DJ’d dancing nights.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="sanctuary">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="sanctuary" data-id="sanctuary"></div>
+                        <hr>
+                        <button id="sanctuaryb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="sanctuaryc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="sanctuarys" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+               <a class="card-title">
+                <h5>Backyard Bayou Livermore</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapseTen" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2491 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      thebackyardbayou.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Spacious eatery for Cajun & Creole classics & beer in a comfy industrial-chic space with live music.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="backyardbayou">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="backyardbayou" data-id="backyardbayou"></div>
+                        <hr>
+                        <button id="backyardbayoub" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="backyardbayouc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="thevenues" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+               <a class="card-title">
+                <h5>The Venue – Livermore</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      293 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      thebackyardbayou.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>The Venue – Livermore</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="thevenue">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="thevenue" data-id="thevenue"></div>
+                        <hr>
+                        <button id="thevenueb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="thevenuec" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="cravingss" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+               <a class="card-title">
+                <h5>Cravings Stone Fired Pizza and Pasta</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse12" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2062 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                     cravingspizzaandpasta.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Relaxed Italian bistro space & patio for pizza & pastas, plus beer, kids' menus & sports TV.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="cravings">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="cravings" data-id="cravings"></div>
+                        <hr>
+                        <button id="cravingsb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="cravingsc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="aviations" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+               <a class="card-title">
+                <h5>Aviation Rooftop Bar & Kitchen</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse13" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2470 First Street, 3rd floor, Livermore
+                    </div>
+                    <div class="col-sm">
+                     aviationlivermore.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Expect urban vistas at this indoor-outdoor burger lounge & bar situated on a spacious rooftop.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="aviation">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="aviation" data-id="aviation"></div>
+                        <hr>
+                        <button id="aviationb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="aviationc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="riatas" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+               <a class="card-title">
+                <h5>The Riata Diner And Tavern</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse14" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      190 S J St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      theriata.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Diner with no-frills, Americana decor offering a vast menu of comfort eats from morning until night.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="riata">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="riata" data-id="riata"></div>
+                        <hr>
+                        <button id="riatab" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="riatac" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="demitriss" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+               <a class="card-title">
+                <h5>Demitri’s Taverna</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse15" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2235 First St, Livermore
+                    </div>
+                    <div class="col-sm">
+                      demitristavernalivermore.com
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>&nbsp;<span class="fa fa-cutlery">&nbsp;Full Food Menu</span>&nbsp;
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Contemporary Greek eatery dishes up classic fare & cocktails in a casual venue with patio seating.</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="demitris">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="demitris" data-id="demitris"></div>
+                        <hr>
+                        <button id="demitrisb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="demitrisc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
+                      </form>
+                    </div>
+                  </div>
+               </div>   
+            </div><!-- end bar block -->
+            <!-- start menu block -->
+            <button id="railroads" class="card-header border-dark alert-info collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16">
+               <a class="card-title">
+                <h5>Railroad Saloon</h5>
+               </a>
+            </button><!-- end menu block -->
+            <div id="collapse16" class="panel-collapse collapse">
+              <div class="container"><!-- start bar block -->
+                  <div class="row">
+                    <div class="col-sm">
+                      2128 Railroad Ave, Livermore
+                    </div>
+                    <div class="col-sm">
+                      facebook.com/RailroadSaloon
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class="col-sm">
+                      <span class="fa fa-heart">&nbsp;Food Donation Station</span>&nbsp;<span class="fa fa-beer">&nbsp;Brew!</span>&nbsp;<span class="fa fa-glass">&nbsp;Full Bar</span>
+                    </div>
+                  </div>
+                  <hr class="style4">
+                  <div class="row">
+                    <div class ="col-sm">
+                      <span>Railroad Saloon offers 19 Craft Beers on tap, a huge patio, 7 Big screen tv's, lots of bourbon, and Livermore's #1 spot for LIVE MUSIC. FREE POOL!!</span>
+                      <hr class="style4">
+                    </div>
+                    <div class="container">
+                      <form id="railroad">
+                        <div><input class="hidden" name="firstname"></div>
+                        <div><input class="hidden" name="email"></div>
+                        <div><input class="hidden" name="venue" value="railroad" data-id="railroad"></div>
+                        <hr>
+                        <button id="railroadb" type='submit' class="btn btn-info btn-lg btn-block"><span>Check In!<span></button>
+                        <button id="railroadc" class="checkedin btn btn-success btn-lg btn-block"><span>You're checked in!</span></button>
+                        <hr class="style4">
                       </form>
                     </div>
                   </div>

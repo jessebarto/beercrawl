@@ -1,3 +1,16 @@
+function populateCheckin () {
+    var getvenues = localStorage.getItem('venues');
+    var venues = JSON.parse(getvenues);
+    console.log(venues);
+    for (var i = 0; i < venues.length; ++i){
+        $('#' + venues[i] + "c").removeClass('checkedin');
+        $('#' + venues[i] + "c").addClass('showcheck');
+        $('#' + venues[i] + "b").addClass('checkedin');
+        $('#' + venues[i] + "s").addClass('selected');
+
+    }
+    
+}
 
 function registerUser(firstname, email) {
     localStorage.setItem('firstname', firstname);
@@ -47,8 +60,10 @@ $('form').submit(function(event){
         data: dataArray,
         success: function(data){
             console.log("user checked in!");
+            $('#' + venue + "c").removeClass('checkedin');
             $('#' + venue + "c").addClass('showcheck');
             $('#' + venue + "b").addClass('checkedin');
+            $('#' + venue + "s").addClass('selected');
             checkin(venue);
         },
         error: function(data) {
@@ -68,7 +83,7 @@ function loaded() {
         localStorage.setItem('venues', JSON.stringify(venues));
         
     }
-    return;
+    populateCheckin();
 
 };
 
